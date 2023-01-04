@@ -1,0 +1,41 @@
+.row {
+    padding: 20px;
+    margin: 0%;
+}
+
+div {
+    background-color: #292e49;
+    text-align: center;
+    color: white;
+}
+
+/*Estilo de la foto de perfil*/
+@media (min-width: 576px) {
+    #fotodeperfil {
+        position: absolute;
+        width: 15%;
+        border-radius: 100%;
+        left: 3%;
+        top: 500px;
+    }
+
+    #nombre {
+        font-weight: bold;
+        margin-top: 10%;
+    }
+}
+
+@media (max-width: 575px) {
+    #fotodeperfil {
+        position: absolute;
+        width: 30%;
+        border-radius: 100%;
+        left: 35%;
+        top: 540px;
+    }
+
+    #nombre {
+        font-weight: bold;
+        margin-top: 25%;
+    }
+}

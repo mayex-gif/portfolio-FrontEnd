@@ -1,0 +1,26 @@
+div{
+    margin: 0;
+    color: white
+}
+
+/* Solid border */
+hr.solid {
+    border-top: 2px solid white;
+}
+
+img{
+    width: 20%;
+    float: left;
+}
+
+p{
+    margin-top: 2%;
+}
+
+li{
+    margin: 2%;
+}
+
+h1{
+    padding-left: 2%;
+}
