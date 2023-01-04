@@ -6,4 +6,10 @@
 
 h1{
     padding-left: 2%;
+    color: white;
+}
+
+/* Solid border */
+hr.solid {
+    border-top: 2px solid white;
 }
