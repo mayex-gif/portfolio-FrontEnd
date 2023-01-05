@@ -1,0 +1,16 @@
+.row{
+    margin: 0;
+    padding: 0px;
+    color: #bebebe;
+}
+
+footer{
+    margin: 0;
+    padding: 0%;
+    background-color: #536976;
+    font-size: 15px;
+}
+
+p{
+    padding-left: 10%;
+}
