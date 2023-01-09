@@ -9,21 +9,21 @@ app-social{
     margin: 25px;
 }
 
-#APlogo{
+.APlogo{
     position: absolute;
     width: 125px;
     margin-left: 15px;
     margin-top: 13px;
 }
 
-#icono{
+.icono{
     float: right;
     margin: 25px;
     width: 40px;
     margin-left: 10px;
 }
 
-#welcome{
+.welcome{
     padding: 0%;
     width: 100%;
     height: 500px;
@@ -36,10 +36,10 @@ app-social{
 }
 
 @media (max-width: 575px) {
-    #APlogo{
+    .APlogo{
         position: relative;
     }
-    #welcome{
+    .welcome{
         margin: 0;
         padding: 0%;
     }

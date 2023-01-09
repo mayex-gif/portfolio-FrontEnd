@@ -1,7 +1,7 @@
 .row{
     margin: 0;
     padding: 0%;
-    background: linear-gradient(#a8c5b5, #536976);
+    background: linear-gradient(#96b6b6, #536976);
 }
 
 /* Solid border */
@@ -13,22 +13,6 @@ hr.solid {
 h1{
     padding-left: 2%;
     color: white;
-}
-
-.boton-personalizado {
-    margin: 0;
-    font-weight: 600;
-    font-size: 100%;
-    color: white;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    background-color: transparent;
-    border-width: 3px;
-    border-style: solid;
-    border-color: white;
-    border-radius: 10px;
 }
 
 .white{
