@@ -1,46 +1,45 @@
 .row{
-    margin: 0;
-    padding: 0%;
     background-color: #292e49;
+    padding: 0%;
+    margin: 0%;
 }
 
-app-social{
-    float: right;
-    margin: 25px;
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.APlogo{
-    position: absolute;
-    width: 125px;
-    margin-left: 15px;
-    margin-top: 13px;
+.redes {
+    margin-right: 0.5em;
 }
 
 .icono{
-    float: right;
-    margin: 25px;
+    margin-right: 15px;
+}
+
+#logoAP {
+    width: 150px;
+}
+
+img {
     width: 40px;
-    margin-left: 10px;
 }
 
-.welcome{
-    padding: 0%;
-    width: 100%;
-    height: 500px;
-}
-
-#login{
-    float: right;
-    margin-top: 25px;
-    margin-right: 10px;
-}
-
+/*--- Para la vista de celular ---*/
 @media (max-width: 575px) {
-    .APlogo{
-        position: relative;
+    .container {
+        flex-direction: column;
     }
-    .welcome{
-        margin: 0;
-        padding: 0%;
+
+    .redes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .redes img {
+        margin: 10px;
     }
 }
