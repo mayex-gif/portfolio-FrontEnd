@@ -1,24 +1,22 @@
 <div class="row">
     <hr class="solid">
-    <h1>Hard & Soft Skills</h1>
-    <div class="text-center col-sm-4 col-md-4 col-lg-4">
-        <circle-progress [title]="'HTML'" [titleColor]="'white'" [percent]="85" [maxPercent]="100" [radius]="100"
-            [showUnits]="false" [showSubtitle]="true" [subtitle]="'85%'" [subtitleFontSize]="'20'"
-            [subtitleColor]="'white'" [clockwise]="false" [outerStrokeWidth]="16" [innerStrokeWidth]="0"
-            [outerStrokeColor]="'#536976'" [animation]="true" [animationDuration]="800" [startFromZero]="true"
-            [responsive]="false">
+    <div style="display: flex; justify-content: space-between; margin: 0; padding: 0%;">
+        <h1>Hard & Soft Skills</h1>
+        <div class="my-1">
+            <button type="button" class="btn btn-outline-light mx-4" routerLink="/nuevaskill/" *ngIf="isLogged"><i
+                    class="bi bi-plus-lg"></i></button>
+        </div>
+    </div>
+    <div class="text-center col-sm-4 col-md-4 col-lg-4" *ngFor="let skill of skill">
+        <circle-progress [title]="(skill.nombre)" [titleColor]="'white'" [percent]="(skill.porcentaje)"
+            [maxPercent]="100" [radius]="100" [showUnits]="false" [showSubtitle]="true" [subtitle]="(skill.subtitle)"
+            [subtitleFontSize]="'20'" [subtitleColor]="'white'" [clockwise]="false" [outerStrokeWidth]="16"
+            [innerStrokeWidth]="0" [outerStrokeColor]="'#536976'" [animation]="true" [animationDuration]="1000"
+            [startFromZero]="true" [responsive]="false">
         </circle-progress>
-
-        <!--<div>
-            <td *ngIf="isLogged">
-                <button class="btn btn-light" routerLink="/editskill/{{skill.id}}">
-                    <i class="bi bi-pencil-fill"></i></button>
-            </td>
-            <td *ngIf="isLogged">
-                <button class="btn btn-danger" (click)="delete(skill.id)">
-                    <i class="bi bi-trash-fill"></i></button>
-            </td>
-        </div>-->
-
+            <button *ngIf="isLogged" class="btn btn-outline-light mx-4" routerLink="/editskill/{{skill.id}}">
+                <i class="bi bi-pencil-fill"></i></button>
+            <button *ngIf="isLogged" class="btn btn-outline-light" style="margin-right: 12px;"
+                (click)="delete(skill.id)"><i class="bi bi-trash-fill"></i></button>
     </div>
 </div>
