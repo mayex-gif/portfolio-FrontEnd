@@ -1,14 +1,26 @@
 <div class="row">
     <hr class="solid">
-    <h1>Experiencia</h1>
-    <div>
-        <ul>
-            <li>
-                <h2>Argentina programa #SéProgramar - Abril 2022</h2>
-                <img src="../../../assets/APLogo-20-20.png" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem est dolorum reiciendis ullam
-                    dignissimos voluptate odit tenetur earum excepturi totam veniam quas, officiis voluptates
-                    necessitatibus quos, voluptas facilis inventore quia?</p>
+    <div style="display: flex; justify-content: space-between; margin: 0; padding: 0%;">
+        <h1>Experiencia</h1>
+        <div class="my-1">
+            <button type="button" class="btn btn-outline-light mx-4" routerLink="/nuevaexperiencia/" *ngIf="isLogged"><i
+                    class="bi bi-plus-lg"></i></button>
+        </div>
+    </div>
+    <div style="margin-right: 0; padding: rigth 0%;">
+        <ul *ngFor="let Experiencia of expe" style="margin-right: 0; padding-right: 0%;">
+            <li style="padding-right:0%; margin-right: 0%;">
+                <div style="display: flex; justify-content: space-between;" class="py-0 my-0">
+                    <h3>{{Experiencia.nombreE}}</h3>
+                    <div style="margin: 0; padding:0%; display: inline-block">
+                        <button *ngIf="isLogged" class="btn btn-outline-light mx-4"
+                            routerLink="/editexp/{{Experiencia.id}}"><i class="bi bi-pencil-fill"></i></button>
+                        <button *ngIf="isLogged" class="btn btn-outline-light" style="margin-right: 12px;"
+                            (click)="delete(Experiencia.id)"><i class="bi bi-trash"></i></button>
+                    </div>
+                </div>
+                <small class="my-0 py-0"><strong>{{Experiencia.desdehastaE}}</strong></small>
+                <p class="my-0 py-0"><br>{{Experiencia.descripcionE}}</p>
             </li>
         </ul>
     </div>
