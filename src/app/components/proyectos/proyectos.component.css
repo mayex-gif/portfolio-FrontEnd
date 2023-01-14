@@ -6,7 +6,6 @@
 
 /* Solid border */
 hr.solid {
-    margin-top: 1%;
     border-top: 2px solid white;
 }
 

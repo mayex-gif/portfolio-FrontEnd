@@ -1,9 +1,9 @@
 <div class="row">
-    <hr class="solid">
+    <hr class="solid mb-1">
     <div style="display: flex; justify-content: space-between; margin: 0; padding: 0%;">
         <h1>Hard & Soft Skills</h1>
         <div class="my-1">
-            <button type="button" class="btn btn-outline-light mx-4" routerLink="/nuevaskill/" *ngIf="isLogged"><i
+            <button type="button" class="btn btn-outline-light mx-4 mt-1" routerLink="/nuevaskill/" *ngIf="isLogged"><i
                     class="bi bi-plus-lg"></i></button>
         </div>
     </div>
@@ -11,7 +11,7 @@
         <circle-progress [title]="(skill.nombre)" [titleColor]="'white'" [percent]="(skill.porcentaje)"
             [maxPercent]="100" [radius]="100" [showUnits]="false" [showSubtitle]="true" [subtitle]="(skill.subtitle)"
             [subtitleFontSize]="'20'" [subtitleColor]="'white'" [clockwise]="false" [outerStrokeWidth]="16"
-            [innerStrokeWidth]="0" [outerStrokeColor]="'#536976'" [animation]="true" [animationDuration]="1000"
+            [innerStrokeWidth]="0" [outerStrokeColor]="'#292e49'" [animation]="true" [animationDuration]="1000"
             [startFromZero]="true" [responsive]="false">
         </circle-progress>
             <button *ngIf="isLogged" class="btn btn-outline-light mx-4" routerLink="/editskill/{{skill.id}}">
