@@ -3,8 +3,8 @@
     <div style="display: flex; justify-content: space-between; margin: 0; padding: 0%;">
         <h1>Experiencia</h1>
         <div class="my-1">
-            <button type="button" class="btn btn-outline-light mx-4 mt-1" routerLink="/nuevaexperiencia/" *ngIf="isLogged"><i
-                    class="bi bi-plus-lg"></i></button>
+            <button type="button" class="btn btn-outline-light mx-4 mt-1" routerLink="/nuevaexperiencia/"
+                *ngIf="isLogged"><i class="bi bi-plus-lg"></i></button>
         </div>
     </div>
     <div style="margin-right: 0; padding: rigth 0%;">
@@ -13,8 +13,7 @@
                 <div style="display: flex; justify-content: space-between;" class="py-0 my-0">
                     <h3>{{Experiencia.nombreE}}</h3>
                     <div style="margin: 0; padding:0%; display: inline-block">
-                        <button *ngIf="isLogged" class="btn btn-outline-light mx-4"
-                            routerLink="/editexp/{{Experiencia.id}}"><i class="bi bi-pencil-fill"></i></button>
+                        <button *ngIf="isLogged" class="btn btn-outline-light mx-4" routerLink="/editexp/{{Experiencia.id}}"><i class="bi bi-pencil-fill"></i></button>
                         <button *ngIf="isLogged" class="btn btn-outline-light" style="margin-right: 12px;"
                             (click)="delete(Experiencia.id)"><i class="bi bi-trash"></i></button>
                     </div>

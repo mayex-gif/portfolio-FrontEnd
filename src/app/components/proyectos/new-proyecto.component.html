@@ -3,24 +3,29 @@
         <div class="container py-5 h-100">
             <div class="row d-flex justify-content-center align-items-center h-100">
                 <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-                    <button class="btn btn-light btn-lg mb-1" type="button" style="background-color: white;" onclick="window.location.href='/'">BACK</button>
+                    <button class="btn btn-light btn-lg mb-1" type="button" style="background-color: white;"
+                        onclick="window.location.href='/'">BACK</button>
                     <div class="card shadow-2-strong" style="border-radius: 1rem;">
                         <div class="card-body px-5 pt-5 pb-5 text-center">
-                            <h3 class="mb-5">NUEVA EXPERIENCIA</h3>
+                            <h3 class="mb-5">NUEVO PROYECTO</h3>
                             <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
                                 <div class="form-outline mb-4">
-                                    <input type="text" id="nombreE" class="form-control" [(ngModel)]="nombreE" name="nombreE" required>
+                                    <input type="text" id="nombreE" class="form-control" [(ngModel)]="nombreP"
+                                        name="nombreE" required>
                                     <label for="nombreE">Nombre de la empresa</label>
                                 </div>
                                 <div class="form-outline mb-4">
-                                    <input type="text" id="descripcionE" class="form-control" [(ngModel)]="descripcionE" name="descripcionE" required>
-                                    <label for="descripcionE">Descripcion de la experiencia</label>
+                                    <input type="text" id="descripcionE" class="form-control" [(ngModel)]="descripcionP"
+                                        name="descripcionE" required>
+                                    <label for="descipcionE">Descripcion de la experiencia</label>
                                 </div>
                                 <div class="form-outline mb-2">
-                                    <input type="text" id="desdehastaE" class="form-control" [(ngModel)]="desdehastaE" name="desdehastaE" required>
+                                    <input type="text" id="desdehastaE" class="form-control" [(ngModel)]="linkP"
+                                        name="desdehastaE" required>
                                     <label for="desdehastaE">Fecha de la experiencia</label>
                                 </div>
-                                <button class="btn btn-outline-secondary btn-lg px-5 mt-4 mb-2" type="submit">AGREGAR EXPERIENCIA</button>
+                                <button class="btn btn-outline-secondary btn-lg px-5 mt-4 mb-2" type="submit">AGREGAR
+                                    PROYECTO</button>
                             </form>
                         </div>
                     </div>
