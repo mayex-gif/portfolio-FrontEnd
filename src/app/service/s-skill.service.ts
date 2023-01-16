@@ -9,6 +9,7 @@ import { Skill } from '../model/skill';
 })
 export class SkillService {
   skillURL = 'https://bkd-test.onrender.com/skill/'
+  sskillURL = 'http://localhost:8080/skill/'
 
   constructor(private httpClient: HttpClient) { }
 

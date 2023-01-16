@@ -10,6 +10,8 @@ import { NuevoUsuario } from '../model/nuevo-usuario';
 })
 export class AuthService {
   authURL = 'https://bkd-test.onrender.com/auth/';
+  aauthURL = 'http://localhost:8080/auth/'
+
   constructor(private httpClient: HttpClient) { }
 
   public nuevo(nuevoUsuario: NuevoUsuario): Observable<any> {

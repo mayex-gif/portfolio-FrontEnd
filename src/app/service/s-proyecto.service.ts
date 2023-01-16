@@ -9,6 +9,7 @@ import { Proyecto } from '../model/proyecto';
 export class SProyectoService {
 
   proURL = 'https://bkd-test.onrender.com/proyecto/'
+  pproURL = 'http://localhost:8080/proyecto/'
   constructor(private httpClient: HttpClient) { }
 
   public lista(): Observable<Proyecto[]> {

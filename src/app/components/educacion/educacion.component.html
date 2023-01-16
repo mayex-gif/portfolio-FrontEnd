@@ -3,11 +3,11 @@
     <div style="display: flex; justify-content: space-between; margin: 0; padding: 0%;">
         <h1>Educación</h1>
         <div class="my-1">
-            <button type="button" class="btn btn-outline-light mx-4 mt-1" routerLink="/nuevaeducacion/" *ngIf="isLogged"><i
-                    class="bi bi-plus-lg"></i></button>
+            <button type="button" class="btn btn-outline-light mx-4 mt-1" routerLink="/nuevaeducacion/"
+                *ngIf="isLogged"><i class="bi bi-plus-lg"></i></button>
         </div>
     </div>
-    <div style="margin-right: 0; padding: rigth 0%;">
+    <div style="margin-right: 0; padding: 0px 12px 0px 12px">
         <ul *ngFor="let Educacion of educ" style="margin-right: 0; padding-right: 0%;">
             <li style="padding-right:0%; margin-right: 0%;">
                 <div style="display: flex; justify-content: space-between;" class="py-0 my-0">
@@ -19,7 +19,7 @@
                             (click)="delete(Educacion.id)"><i class="bi bi-trash"></i></button>
                     </div>
                 </div>
-                <div class="display: flex:">
+                <div>
                     <small class="my-0 py-0"><strong>{{Educacion.desdehastaE}}</strong></small>
                     <p class="my-0 py-0"><br>{{Educacion.descripcionE}}</p>
                 </div>
