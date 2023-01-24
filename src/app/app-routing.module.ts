@@ -6,6 +6,9 @@ import { EditEducacionComponent } from './components/educacion/edit-educacion.co
 import { NewEducacionComponent } from './components/educacion/new-educacion.component';
 import { NewSkillComponent } from './components/hard-and-soft-skills/new-skill.component';
 import { EditSkillComponent } from './components/hard-and-soft-skills/edit-skill.component';
+import { NewProyectoComponent } from './components/proyectos/new-proyecto.component';
+import { EditProyectoComponent } from './components/proyectos/edit-proyecto.component';
+import { EditPerfilComponent } from './components/foto-perfil/edit-perfil.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 
@@ -18,10 +21,14 @@ const routes: Routes = [
   { path: 'editeduc/:id', component: EditEducacionComponent },
   { path: 'nuevaskill', component: NewSkillComponent },
   { path: 'editskill/:id', component: EditSkillComponent },
+  { path: 'editproyecto/:id', component: EditProyectoComponent },
+  { path: 'nuevoproyecto', component: NewProyectoComponent },
+  { path: 'editperfil/:id', component: EditPerfilComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
+
 export class AppRoutingModule { }

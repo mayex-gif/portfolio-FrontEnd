@@ -1,13 +1,13 @@
 <div class="row">
-    <hr class="solid mb-1">
+    <hr class="solid mb-1 mt-5">
     <div style="display: flex; justify-content: space-between; margin: 0; padding: 0%;">
         <h1>Experiencia</h1>
         <div class="my-1">
-            <button type="button" class="btn btn-outline-light mx-4 mt-1" routerLink="/nuevaexperiencia/" *ngIf="isLogged"><i
-                    class="bi bi-plus-lg"></i></button>
+            <button type="button" class="btn btn-outline-light mx-4 mt-1" routerLink="/nuevaexperiencia/"
+                *ngIf="isLogged"><i class="bi bi-plus-lg"></i></button>
         </div>
     </div>
-    <div style="margin-right: 0; padding: rigth 0%;">
+    <div style="margin-right: 0; padding: 0px 12px 0px 12px">
         <ul *ngFor="let Experiencia of expe" style="margin-right: 0; padding-right: 0%;">
             <li style="padding-right:0%; margin-right: 0%;">
                 <div style="display: flex; justify-content: space-between;" class="py-0 my-0">

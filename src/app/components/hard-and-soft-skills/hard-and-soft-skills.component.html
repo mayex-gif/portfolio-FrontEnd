@@ -11,12 +11,12 @@
         <circle-progress [title]="(skill.nombre)" [titleColor]="'white'" [percent]="(skill.porcentaje)"
             [maxPercent]="100" [radius]="100" [showUnits]="false" [showSubtitle]="true" [subtitle]="(skill.subtitle)"
             [subtitleFontSize]="'20'" [subtitleColor]="'white'" [clockwise]="false" [outerStrokeWidth]="16"
-            [innerStrokeWidth]="0" [outerStrokeColor]="'#292e49'" [animation]="true" [animationDuration]="1000"
-            [startFromZero]="true" [responsive]="false">
+            [innerStrokeWidth]="0" [outerStrokeColor]="'#292e49'" [animation]="false" [startFromZero]="true"
+            [responsive]="false">
         </circle-progress>
-            <button *ngIf="isLogged" class="btn btn-outline-light mx-4" routerLink="/editskill/{{skill.id}}">
-                <i class="bi bi-pencil-fill"></i></button>
-            <button *ngIf="isLogged" class="btn btn-outline-light" style="margin-right: 12px;"
-                (click)="delete(skill.id)"><i class="bi bi-trash-fill"></i></button>
+        <button *ngIf="isLogged" class="btn btn-outline-light mx-4" routerLink="/editskill/{{skill.id}}">
+            <i class="bi bi-pencil-fill"></i></button>
+        <button *ngIf="isLogged" class="btn btn-outline-light" style="margin-right: 12px;" (click)="delete(skill.id)"><i
+                class="bi bi-trash-fill"></i></button>
     </div>
 </div>

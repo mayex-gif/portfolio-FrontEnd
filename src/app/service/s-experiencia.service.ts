@@ -8,7 +8,8 @@ import { Experiencia } from '../model/experiencia';
 })
 export class SExperienciaService {
 
-  expURL = 'http://localhost:8080/experiencia/'
+  expURL = 'https://bkd-test.onrender.com/experiencia/'
+  eexpURL = 'http://localhost:8080/experiencia/'
   constructor(private httpClient: HttpClient) { }
 
   public lista(): Observable<Experiencia[]> {
