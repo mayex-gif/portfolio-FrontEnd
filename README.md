@@ -1,4 +1,5 @@
-Before opening the following link enter and wait for the backend page to load (render link)
+Before opening the following link enter and wait for the backend page to load (render link).
+I suppose it is due to the use of free pages.
 
 # https://frontend---prueba.web.app/
 
