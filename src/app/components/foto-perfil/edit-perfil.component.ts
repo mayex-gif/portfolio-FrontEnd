@@ -10,7 +10,7 @@ import { SPersonaService } from 'src/app/service/s-persona.service';
   styleUrls: ['./edit-perfil.component.css']
 })
 export class EditPerfilComponent implements OnInit {
-  persona: Persona = null;
+  pers: Persona = null;
 
   constructor(private sPersona: SPersonaService, private activatedRouter: ActivatedRoute, private router: Router, public imageService: SImageService) { }
 
@@ -19,7 +19,7 @@ export class EditPerfilComponent implements OnInit {
     this.sPersona.detail(id)
       .subscribe(
         data => {
-          this.persona = data;
+          this.pers = data;
         }, err => {
           alert("Error al modificar el perfil");
           this.router.navigate(['']);
@@ -29,14 +29,14 @@ export class EditPerfilComponent implements OnInit {
 
   onUpdate(): void {
     const id = this.activatedRouter.snapshot.params['id'];
-    this.persona.img = this.imageService.url
-    this.sPersona.update(id, this.persona).subscribe(
+    this.pers.img = this.imageService.url
+    this.sPersona.update(id, this.pers).subscribe(
       data => {
         alert("Perfil modificado exitosamente")
         this.router.navigate(['']);
       }, err => {
         alert("Error al modificar el perfil");
-        this.router.navigate(['/editperfil/{{Perfil.id}}']);
+        this.router.navigate(['/editperfil/1']);
       }
     )
   }

@@ -3,11 +3,11 @@
         <div class="container py-5 h-100">
             <div class="row d-flex justify-content-center align-items-center h-100">
                 <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-                    <div class="card shadow-2-strong" style="border-radius: 1rem;">
+                    <button class="btn btn-light btn-lg mb-1" type="button" style="background-color: white;"
+                            onclick="window.location.href='/'">BACK</button>
+                        <div class="card shadow-2-strong" style="border-radius: 1rem;">
                         <div class="card-body px-5 pt-5 pb-5 text-center">
-
                             <h3 class="mb-5">LOGIN</h3>
-
                             <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
                                 <div class="form-outline mb-4">
                                     <input type="nombreUsuario" id="nombreUsuario" class="form-control form-control-lg" [(ngModel)]="nombreUsuario" name="nombreUsuario" required/>
@@ -25,11 +25,11 @@
                             <hr class="my-4">
 
                             <div>
-                                <strong>
+                                <!--<strong>
                                     <p class="pt-2 mb-0">Don't have an account? <a href="#!" class="fw-bold"
                                             style="text-decoration: none; color:#96b6b6;">Sign Up</a>
                                     </p>
-                                </strong>
+                                </strong>-->
                             </div>
 
                         </div>

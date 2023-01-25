@@ -3,7 +3,7 @@
     <div style="display: flex; justify-content: space-between; margin: 0; padding: 0%;">
         <h1>Proyectos</h1>
         <div class="my-1">
-            <button type="button" class="btn btn-outline-light mx-4 mt-1" routerLink="/nuevaeducacion/"
+            <button type="button" class="btn btn-outline-light mx-4 mt-1" routerLink="/nuevoproyecto/"
                 *ngIf="isLogged"><i class="bi bi-plus-lg"></i></button>
         </div>
     </div>
@@ -14,7 +14,7 @@
                     <h3>{{Proyecto.nombreP}}</h3>
                     <div style="margin: 0; padding:0%; display: inline-block">
                         <button *ngIf="isLogged" class="btn btn-outline-light mx-4"
-                            routerLink="/editeduc/{{Proyecto.id}}"><i class="bi bi-pencil-fill"></i></button>
+                            routerLink="/editproyecto/{{Proyecto.id}}"><i class="bi bi-pencil-fill"></i></button>
                         <button *ngIf="isLogged" class="btn btn-outline-light" style="margin-right: 12px;"
                             (click)="delete(Proyecto.id)"><i class="bi bi-trash"></i></button>
                     </div>
