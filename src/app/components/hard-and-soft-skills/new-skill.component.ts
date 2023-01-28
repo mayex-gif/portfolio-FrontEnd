@@ -26,7 +26,7 @@ export class NewSkillComponent implements OnInit {
         this.router.navigate(['']);
       }, err => {
         alert("Falló al añadir la skill");
-        this.router.navigate(['/nuevaskill/']);
+        this.router.navigate(['/nueva-skill/']);
       }
     )
   }

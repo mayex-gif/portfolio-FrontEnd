@@ -1,4 +1,4 @@
-<body style="background: linear-gradient(#292e49, #536976, #96b6b6);">
+<div style="background: linear-gradient(#292e49, #536976, #96b6b6);">
     <section>
         <div class="container py-5 h-100" *ngIf="proYec">
             <div class="row d-flex justify-content-center align-items-center h-100">
@@ -15,9 +15,10 @@
                                     <label for="nombreE">Nombre del proyecto</label>
                                 </div>
                                 <div class="form-outline mb-4">
-                                    <input type="text" id="descripcionP" class="form-control"
-                                        [(ngModel)]="proYec.descripcionP" name="descripcionP" required>
-                                    <label for="descripcionP">Descripcion del poryecto</label>
+                                    <textarea type="text" id="descripcionP" class=" form-control"
+                                        [(ngModel)]="proYec.descripcionP" name="descripcionP" rows="7" cols="auto"
+                                        required></textarea>
+                                    <label for="descripcionP">Descripcion del proyecto</label>
                                 </div>
                                 <div class="form-outline mb-2">
                                     <input type="text" id="linkP" class="form-control" [(ngModel)]="proYec.linkP"
@@ -33,4 +34,4 @@
             </div>
         </div>
     </section>
-</body>
+</div>

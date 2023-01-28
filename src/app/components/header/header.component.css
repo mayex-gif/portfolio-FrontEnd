@@ -1,7 +1,8 @@
-.row{
+.row {
     background-color: #292e49;
     padding: 0%;
     margin: 0%;
+    height: 100px;
 }
 
 .container {
@@ -10,7 +11,7 @@
     align-items: center;
 }
 
-.icono{
+.icono {
     margin-right: 15px;
 }
 
@@ -32,10 +33,18 @@ img {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 10px;
+        padding-bottom: 10px;
     }
 
     .redes img {
-        margin: 10px;
+        margin-bottom: 10px;
+    }
+
+    .icono {
+        margin-right: 0px;
+    }
+
+    .row {
+        height: 300px;
     }
 }

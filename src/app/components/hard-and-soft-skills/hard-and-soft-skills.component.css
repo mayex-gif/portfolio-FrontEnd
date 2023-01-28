@@ -1,5 +1,6 @@
 div {
     margin: 0;
+    padding: 0%;
     color: white
 }
 
@@ -23,4 +24,28 @@ li {
 
 h1 {
     padding-left: 2%;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.child {
+    display: grid;
+    place-items: center;
+}
+
+/*Estilo del footer*/
+@media (max-width: 850px) {
+    .parent {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 575px) {
+    .parent {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

@@ -9,7 +9,8 @@ import { TokenService } from 'src/app/service/token.service';
   styleUrls: ['./foto-perfil.component.css']
 })
 export class FotoPerfilComponent implements OnInit {
-  persona: Persona = null;//new Persona("Alejo Emanuel", "Alcalde", "Actualmente soy estudiante universitario de 2do año de la carrera de Ingeniería en Sistemas de Información.","www.url.com");
+
+  persona: Persona = null;
 
   constructor(public sPersona: SPersonaService, private tokenService: TokenService) { }
 

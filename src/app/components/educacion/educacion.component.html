@@ -3,7 +3,7 @@
     <div style="display: flex; justify-content: space-between; margin: 0; padding: 0%;">
         <h1>Educación</h1>
         <div class="my-1">
-            <button type="button" class="btn btn-outline-light mx-4 mt-1" routerLink="/nuevaeducacion/"
+            <button type="button" class="btn btn-outline-light mx-4 mt-1" routerLink="/nueva-educacion/"
                 *ngIf="isLogged"><i class="bi bi-plus-lg"></i></button>
         </div>
     </div>
@@ -14,15 +14,17 @@
                     <h3>{{Educacion.nombreE}}</h3>
                     <div style="margin: 0; padding:0%; display: inline-block">
                         <button *ngIf="isLogged" class="btn btn-outline-light mx-4"
-                            routerLink="/editeduc/{{Educacion.id}}"><i class="bi bi-pencil-fill"></i></button>
+                            routerLink="/edit-educacion/{{Educacion.id}}"><i class="bi bi-pencil-fill"></i></button>
                         <button *ngIf="isLogged" class="btn btn-outline-light" style="margin-right: 12px;"
                             (click)="delete(Educacion.id)"><i class="bi bi-trash"></i></button>
                     </div>
                 </div>
-                <div>
-                    <small class="my-0 py-0"><strong>{{Educacion.desdehastaE}}</strong></small>
-                    <p class="my-0 py-0"><br>{{Educacion.descripcionE}}</p>
+                <div class="my-0 py-0">
+                    <p class="my-0 py-0"><small class="my-0 py-0"><strong>{{Educacion.desdehastaE}}</strong></small>
+                        <br>{{Educacion.descripcionE}}
+                    </p>
                 </div>
+
             </li>
         </ul>
     </div>

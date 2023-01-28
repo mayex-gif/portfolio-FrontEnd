@@ -1,16 +1,28 @@
-.row{
+.row {
     margin: 0;
     padding: 0px;
     color: #bebebe;
 }
 
-footer{
-    margin: 0;
-    padding: 0%;
+footer {
+    margin: 0%;
+    padding: 2%;
     background-color: #536976;
     font-size: 15px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
 }
 
-p{
-    padding-left: 10%;
+/*Estilo del footer*/
+@media (min-width: 576px) {
+    footer {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 575px) {
+    footer {
+        flex-direction: column;
+    }
 }

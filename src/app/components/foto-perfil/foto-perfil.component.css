@@ -1,39 +1,112 @@
 .row {
-    padding: 20px 20px 0px 20px;
-    margin: 0%;
-}
-
-div {
     background-color: #292e49;
-    text-align: center;
     color: white;
+    margin: 0%;
+    padding: 0%;
 }
 
-.nombre{
+.nombres {
     font-weight: bold;
 }
 
 /*Estilo de la foto de perfil*/
 @media (min-width: 576px) {
     #fotodeperfil {
+        width: 150px;
+        height: 150px;
         position: absolute;
-        width: 15%;
         border-radius: 100%;
-        left: 3%;
-        top: 500px;
+        left: 7%;
+        top: 525px;
+    }
+
+    .texto {
+        margin: 0%;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: space-around;
+        padding: 0%;
+    }
+
+    .nombre {
+        display: flex;
+        flex-direction: column;
+        margin: 0%;
+        width: 15%;
+        padding: 0%;
+        margin: 8% 0% 0% 0%;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        margin: 4% 0% 0% 0%;
+        text-align: left;
+        width: 65%;
+    }
+}
+
+@media (max-width: 825px) {
+    #fotodeperfil {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        top: 550px;
     }
 }
 
 @media (max-width: 575px) {
     #fotodeperfil {
+        width: 150px;
+        height: 150px;
         position: absolute;
-        width: 30%;
         border-radius: 100%;
-        left: 35%;
-        top: 550px;
+        display: flex;
+        justify-content: center;
+        top: 525px;
+    }
+
+    .texto {
+        margin: 0%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 1% 5% 0% 5%;
+    }
+
+    .nombres {
+        margin-top: 20%;
     }
 
     .nombre {
-        margin-top: 20%;
+        display: flex;
+        flex-direction: column;
+        margin: 0%;
+        width: 100%;
+        padding: 0%;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        margin: 0%;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 350px) {
+    #fotodeperfil {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        top: 550px;
     }
 }

@@ -27,6 +27,9 @@ import { EditSkillComponent } from './components/hard-and-soft-skills/edit-skill
 import { EditProyectoComponent } from './components/proyectos/edit-proyecto.component';
 import { NewProyectoComponent } from './components/proyectos/new-proyecto.component';
 import { EditPerfilComponent } from './components/foto-perfil/edit-perfil.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideStorage,getStorage } from '@angular/fire/storage';
 
 @NgModule({
   declarations: [
@@ -57,7 +60,9 @@ import { EditPerfilComponent } from './components/foto-perfil/edit-perfil.compon
     NgCircleProgressModule.forRoot({}),
     HttpClientModule,
     FormsModule,
-    RouterModule
+    RouterModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideStorage(() => getStorage())
   ],
   providers: [
     interceptorProvider
