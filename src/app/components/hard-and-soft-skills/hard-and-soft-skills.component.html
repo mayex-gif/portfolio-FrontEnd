@@ -16,12 +16,13 @@
                     [clockwise]="false" [outerStrokeWidth]="16" [innerStrokeWidth]="0" [outerStrokeColor]="'#292e49'"
                     [animation]="false" [startFromZero]="true" [responsive]="false">
                 </circle-progress>
-                <div style="padding-bottom: 5%;">
-                    <button *ngIf="isLogged" class="btn btn-outline-light" style="padding: 0px 24px 0px 24px;"
-                        routerLink="/edit-skill/{{skill.id}}">
-                        <i class="bi bi-pencil-fill"></i></button>
-                    <button *ngIf="isLogged" class="btn btn-outline-light" style="padding-right: 24px;"
-                        (click)="delete(skill.id)"><i class="bi bi-trash-fill"></i></button>
+                <div style="display: flex; justify-content: center;">
+                    <div style="margin: 0; padding:0%;">
+                        <button *ngIf="isLogged" class="btn btn-outline-light mx-2"
+                            routerLink="/edit-skill/{{skill.id}}"><i class="bi bi-pencil-fill"></i></button>
+                        <button *ngIf="isLogged" class="btn btn-outline-light mx-2"
+                            (click)="delete(skill.id)"><i class="bi bi-trash"></i></button>
+                    </div>
                 </div>
             </div>
 
